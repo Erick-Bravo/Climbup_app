@@ -1,0 +1,23 @@
+Users
+    id
+    username
+    email
+    hashedpassword
+
+Groups
+    name
+    description
+    user_id
+    members
+
+Events
+    name
+    description
+    members
+
+Locations
+    State
+    City
+
+
+Months

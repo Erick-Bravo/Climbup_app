@@ -1,0 +1,5 @@
+What you are working on
+A description of the problem
+What the error message says on the server/front-end console (if there is one)
+A relevant code snippet
+The debugging process you’ve done so far (THIS IS VERY HELPFUL TO DESCRIBE)

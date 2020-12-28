@@ -1,0 +1,27 @@
+Features:
+
+    Groups (by state)
+        - Group/State page has list of Events
+        - Section of members
+        - Join button
+        - Ability to create an event
+
+        tabs under group page navbar
+        - About
+        - Events
+        - members
+        - Photos
+        - Discussions
+
+    Events and RSVP's
+        - Events seemlessy appear under group (w/ an attend button)
+        - Event page has info of event and an attend button that follows you
+          through the scroll (on top)
+        - Shows attendees list of 8. (option to "See all)
+        - comment section at botton of attendees
+
+    Calendar
+        - A designated Calendar tab that pull up a Calendar with events on appropriate dates
+        (leave this one out if no time)
+        
+    Search
