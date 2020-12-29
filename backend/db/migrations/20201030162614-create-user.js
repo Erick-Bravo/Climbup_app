@@ -9,11 +9,12 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       firstName: {
-        type: Sequelize.STRING(15),
-        allowNull: false,
+        type: Sequelize.STRING(50),
+        allowNull: true
+
       },
       lastName: {
-        type: Sequelize.STRING(15),
+        type: Sequelize.STRING(50),
         allowNull: false,
       },
       username: {
@@ -22,12 +23,13 @@ module.exports = {
         unique: true,
       },
       email: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(30),
         allowNull: false,
         unique: true,
       },
       photoUrl: {
         type: Sequelize.STRING,
+        allowNull: true
       },
       hashedPassword: {
         type: Sequelize.STRING.BINARY,

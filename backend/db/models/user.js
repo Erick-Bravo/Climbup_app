@@ -6,6 +6,27 @@ module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
     {
+      firstName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [1, 50]
+        }
+      },
+      lastName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [1, 50]
+        }
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [3, 30]
+        }
+      },
       username: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -18,12 +39,9 @@ module.exports = (sequelize, DataTypes) => {
           }
         }
       },
-      email: {
+      photoUrl: {
         type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [3, 256]
-        }
+        allowNull: true
       },
       hashedPassword: {
         type: DataTypes.STRING.BINARY,
