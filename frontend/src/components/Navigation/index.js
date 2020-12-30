@@ -19,9 +19,8 @@ function Navigation({ isLoaded }) {
   if (sessionUser) {
     sessionLinks = (
       <>
-        <NavLink to="/groups">MyGroups</NavLink>
+        <NavLink to="/groups/user">MyGroups</NavLink>
         <NavLink to="/events">MyEvents</NavLink>
-        <NavLink to="/messages">Messages</NavLink>
         <ProfileButton user={sessionUser} />
       </>
     );
