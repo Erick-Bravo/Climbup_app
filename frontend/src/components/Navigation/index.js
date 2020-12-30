@@ -21,7 +21,6 @@ function Navigation({ isLoaded }) {
       <>
         <NavLink to="/groups">MyGroups</NavLink>
         <NavLink to="/events">MyEvents</NavLink>
-        <NavLink to="/calendar">Calendar</NavLink>
         <NavLink to="/messages">Messages</NavLink>
         <ProfileButton user={sessionUser} />
       </>
@@ -40,7 +39,7 @@ function Navigation({ isLoaded }) {
       <li>
         <h2 id="logo">ClimbUp</h2>
       </li>
-      <li>
+      <li id="links">
         <NavLink exact to="/">Home</NavLink>
         {isLoaded && sessionLinks}
       </li>

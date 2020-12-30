@@ -1,10 +1,30 @@
 import "./index.css"
+import picture2 from "./rjfranklinPhoto2.JPG"
+import { useSelector } from "react-redux" //gets a callback function
 
 const Home = () => {
-    return (
-        <div id="home-page-container">
- 
 
+    const loggedinUser = useSelector(state => {
+        console.log(state);
+        return state.session.user
+    })
+
+    return (
+        <div>
+            <div id="home-page-container">
+                <img src={picture2} />
+                <div id="overlay-home">
+                    <h1>Welcome to ClimbUp!</h1>
+                    <ul>
+                        <li>Find your group</li>
+                        <li>Join an event</li>
+                        <li>Live the life.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="second-banner-home">
+                {loggedinUser && <p>You are logged in as {loggedinUser.username}</p>}
+            </div>
         </div>
     );
 };

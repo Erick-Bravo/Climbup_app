@@ -1,5 +1,41 @@
 #home-page-container {
-    height: 400px;
-    background: rgb(171, 243, 171);
+    height: 250px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+}
+
+#home-page-container img{
+    width: 100%;
+}
+
+#overlay-home {
+    height: 250px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+#overlay-home h1 {
+    color: white;
+    padding-left: 50px;
+}
+#overlay-home ul {
+    color: white;
+    padding-left: 50px;
+}
+
+#second-banner-home p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
     margin: 0;
+    padding: 0;
 }

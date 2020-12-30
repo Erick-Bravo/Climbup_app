@@ -13,6 +13,15 @@
 
 }
 
-#logo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#links {
+  font-size: small;
+  padding: 10px;
 }
+
+li {
+  padding: 5px;
+}
+
+/* #logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} */
