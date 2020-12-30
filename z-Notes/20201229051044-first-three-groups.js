@@ -1,7 +1,4 @@
 'use strict';
-const { users } = require("./20201030163017-demo-user")
-
-console.log(users[0])
 
 const demoUser = users[0].id
 const user1 = users[1].id //owner if group1
