@@ -5,13 +5,26 @@ import ProfileButton from './ProfileButton';
 import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
 
-function Navigation({ isLoaded }){
+function Navigation({ isLoaded }) {
   const sessionUser = useSelector(state => state.session.user);
+
+
+  // if session user exists,
+  //sessionLinks help render the ProfileButton component that leads to sessionUser
+  //if not
+  //sessionLinks with render the sign-up link with login modal.
+  //(wtf is modal)
 
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
-      <ProfileButton user={sessionUser} />
+      <>
+        <NavLink to="/groups">MyGroups</NavLink>
+        <NavLink to="/events">MyEvents</NavLink>
+        <NavLink to="/calendar">Calendar</NavLink>
+        <NavLink to="/messages">Messages</NavLink>
+        <ProfileButton user={sessionUser} />
+      </>
     );
   } else {
     sessionLinks = (
@@ -23,7 +36,10 @@ function Navigation({ isLoaded }){
   }
 
   return (
-    <ul>
+    <ul id="top-nav-bar">
+      <li>
+        <h2 id="logo">ClimbUp</h2>
+      </li>
       <li>
         <NavLink exact to="/">Home</NavLink>
         {isLoaded && sessionLinks}

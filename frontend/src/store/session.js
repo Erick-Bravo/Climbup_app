@@ -28,10 +28,12 @@ export const restoreUser = () => async (dispatch) => {
 };
 
 export const signup = (user) => async (dispatch) => {
-  const { username, email, password } = user;
+  const { firstName, lastName, username, email, password } = user;
   const response = await fetch('/api/users', {
     method: 'POST',
     body: JSON.stringify({
+      firstName,
+      lastName,
       username,
       email,
       password
@@ -42,6 +44,7 @@ export const signup = (user) => async (dispatch) => {
   return response;
 };
 
+//Deleting session equates to logging out.
 export const logout = () => async (dispatch) => {
   const response = await fetch('/api/session', {
     method: 'DELETE'
