@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             <div id="home-page-container">
-                <img src={picture2} />
+                <img src={picture2} alt="whoops, a thing SHOULD be here..." />
                 <div id="overlay-home">
                     <h1>Welcome to ClimbUp!</h1>
                     <ul>

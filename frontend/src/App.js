@@ -6,7 +6,7 @@ import LoginFormPage from "./components/LoginFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
-import MyGroup from "./components/Routes/MyGroups";
+// import MyGroup from "./components/Routes/MyGroups";
 import Messages from "./components/Routes/MessagesPage";
 import CalendarPage from "./components/Routes/CalendarPage";
 import EventsList from "./components/Routes/EventsList";
