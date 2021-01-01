@@ -36,6 +36,14 @@
 #second-banner-home p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
-    margin: 0;
-    padding: 0;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+#second-banner-home a{
+    text-decoration: none;
+    padding-left: 20px;
+    margin: 10px;
+
 }
