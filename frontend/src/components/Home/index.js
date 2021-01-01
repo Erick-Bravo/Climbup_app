@@ -1,5 +1,6 @@
 import "./index.css"
 import picture2 from "./rjfranklinPhoto2.JPG"
+import { NavLink } from "react-router-dom"
 import { useSelector } from "react-redux" //gets a callback function
 
 const Home = () => {
@@ -24,6 +25,8 @@ const Home = () => {
             </div>
             <div id="second-banner-home">
                 {loggedinUser && <p>You are logged in as {loggedinUser.username}</p>}
+                <NavLink to="/groups">See All Groups</NavLink>
+                <NavLink to="/events">See All Events</NavLink>
             </div>
         </div>
     );
