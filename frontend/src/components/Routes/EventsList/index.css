@@ -1,0 +1,9 @@
+#event-container a{
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(28, 28, 92);
+}
