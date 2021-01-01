@@ -13,6 +13,11 @@
 
 }
 
+#top-nav-bar a{
+  font-size: 20px;
+  text-decoration: none;
+}
+
 #links {
   font-size: small;
   padding: 10px, 10px,;
@@ -23,7 +28,6 @@
   padding: 10px, 10px,;
   margin: 20px;
   font-size: 10px;
-  text-decoration: none;
 }
 
 #links a:hover {
@@ -34,8 +38,12 @@
 
 li {
   padding: 5px;
-
 }
+
+#logo {
+  font-size: 20px;
+}
+
 
 /* #logo {
   font-family: Georgia, 'Times New Roman', Times, serif;

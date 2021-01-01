@@ -35,9 +35,11 @@ function Navigation({ isLoaded }) {
 
   return (
     <ul id="top-nav-bar">
-      <li>
-        <h2 id="logo">ClimbUp</h2>
-      </li>
+      <NavLink to="/">
+        <li>
+          <h2 id="logo">ClimbUp</h2>
+        </li>
+      </NavLink>
       <li id="links">
         <NavLink exact to="/">Home</NavLink>
         {isLoaded && sessionLinks}
