@@ -1,5 +1,4 @@
-import { fetch } from "../../../store/csrf" //already doing res.json
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchAllEvents } from "../../../store/events"
 import "./index.css"
@@ -30,12 +29,9 @@ const Events = () => {
 
     //Empty array = do this once when this comp is first shown.
     useEffect(() => {
-        const fetchData = async() => {
             dispatch(
                 fetchAllEvents()
             );
-        }
-        fetchData()
     }, [dispatch]);
 
     return (

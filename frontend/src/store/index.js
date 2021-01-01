@@ -3,11 +3,13 @@ import thunk from 'redux-thunk';
 import session from './session'
 import groupsReducer from "./groups"
 import eventsReducer from "./events"
+import usersReducer from "./users"
 
 const rootReducer = combineReducers({
   session: session,
   groups: groupsReducer,
-  events: eventsReducer
+  events: eventsReducer,
+  users: usersReducer
 });
 
 let enhancer;
