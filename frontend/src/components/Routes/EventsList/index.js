@@ -10,6 +10,7 @@ const Event = ({theEvent}) => {
     console.log(theEvent)
     const event = theEvent
     return (
+        
         <div id="event-container" onClick={(e) => console.log(`This is the div!!!! ${e.target.id}`)}>
             <h2>{event.name}</h2>
             <h5>{event.address}</h5>
