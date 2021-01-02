@@ -3,9 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { fetchAllGroups } from "../../../store/groups";
 import { fetchAllUsers } from "../../../store/users";
+import { adamOndra } from "../../../loadingGiffs"
 import "./index.css";
 
-const adamOndra = "https://www.google.com/url?sa=i&url=https%3A%2F%2Frockandice.com%2Fsnowball%2Fclimbing-gifs%2F&psig=AOvVaw2qexZOCEe14L946hMoy-_g&ust=1609628748326000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOj-xMPs--0CFQAAAAAdAAAAABBU"
+
 
 const Group = ({ theGroup }) => {
     const ownerIdNumber = theGroup.ownerId;

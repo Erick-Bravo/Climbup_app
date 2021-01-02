@@ -4,10 +4,15 @@
 
 #group-container a{
     text-decoration: none;
+    color: rgb(28, 28, 92);
 
 }
 
 a:visited {
     text-decoration: none;
     color: rgb(28, 28, 92);
+}
+
+#group-container {
+    background-color: rgb(181, 255, 233);
 }

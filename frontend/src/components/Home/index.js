@@ -19,7 +19,7 @@ const Home = () => {
                     <ul>
                         <li>Find your group</li>
                         <li>Join an event</li>
-                        <li>Live the life.</li>
+                        <li>Live your best life.</li>
                     </ul>
                 </div>
             </div>

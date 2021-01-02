@@ -1,5 +1,10 @@
+#event-container {
+    background-color: rgb(181, 255, 233);
+}
+
 #event-container a{
     text-decoration: none;
+    color: rgb(28, 28, 92);
 
 }
 

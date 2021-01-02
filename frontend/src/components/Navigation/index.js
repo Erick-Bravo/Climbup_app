@@ -16,6 +16,10 @@ function Navigation({ isLoaded }) {
   //(wtf is modal)
 
   let sessionLinks;
+
+    //  <NavLink to=`/groups/user${id}/mygroups`>MyGroups</NavLink>
+    //  <NavLink to=`/events/user${id}/myevents`>MyEvents</NavLink>
+    
   if (sessionUser) {
     sessionLinks = (
       <>

@@ -11,6 +11,9 @@ import Home from "./components/Home";
 import CalendarPage from "./components/Routes/CalendarPage";
 import Events from "./components/Routes/EventsList";
 import Groups from "./components/Routes/Groups"
+import GroupPage from "./components/Routes/GroupPage"
+
+import { errorGiff } from "./loadingGiffs"
 
 
 
@@ -37,8 +40,11 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <Route path="/groups">
+          <Route exact path="/groups">
             <Groups />
+          </Route>
+          <Route path="/groups/:groupId">
+            <GroupPage />
           </Route>
           <Route path="/calendar">
             <CalendarPage />
@@ -50,6 +56,7 @@ function App() {
             <Home />
           </Route>
           <Route path="*">
+            <img alt="Even the Giff didnt load..." src={errorGiff} />
             <h1>404 Page Not Found</h1>
           </Route>
         </Switch>
