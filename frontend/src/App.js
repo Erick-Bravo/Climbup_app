@@ -6,8 +6,6 @@ import LoginFormPage from "./components/LoginFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
-// import MyGroup from "./components/Routes/MyGroups";
-// import Messages from "./components/Routes/MessagesPage";
 // import CalendarPage from "./components/Routes/CalendarPage";
 import Events from "./components/Routes/EventsList";
 import Groups from "./components/Routes/Groups"
@@ -47,10 +45,10 @@ function App() {
           <Route path="/groups/:groupId">
             <GroupPage />
           </Route>
-          <Route path="/events">
+          <Route exact path="/events">
             <Events />
           </Route>
-          <Route path="/events/:eventsId">
+          <Route path="/events/:eventId">
             <EventPage />
           </Route>
           <Route exact path="/">
