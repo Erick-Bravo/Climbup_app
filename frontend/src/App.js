@@ -8,10 +8,11 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 // import MyGroup from "./components/Routes/MyGroups";
 // import Messages from "./components/Routes/MessagesPage";
-import CalendarPage from "./components/Routes/CalendarPage";
+// import CalendarPage from "./components/Routes/CalendarPage";
 import Events from "./components/Routes/EventsList";
 import Groups from "./components/Routes/Groups"
 import GroupPage from "./components/Routes/GroupPage"
+import EventPage from "./components/Routes/EventPage"
 
 import { errorGiff } from "./loadingGiffs"
 
@@ -46,11 +47,11 @@ function App() {
           <Route path="/groups/:groupId">
             <GroupPage />
           </Route>
-          <Route path="/calendar">
-            <CalendarPage />
-          </Route>
           <Route path="/events">
             <Events />
+          </Route>
+          <Route path="/events/:eventsId">
+            <EventPage />
           </Route>
           <Route exact path="/">
             <Home />

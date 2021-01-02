@@ -6,7 +6,6 @@ import { useSelector } from "react-redux" //gets a callback function
 const Home = () => {
 
     const loggedinUser = useSelector(state => {
-        console.log(state);
         return state.session.user
     })
 
