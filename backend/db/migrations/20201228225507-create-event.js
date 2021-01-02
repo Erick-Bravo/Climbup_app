@@ -17,16 +17,15 @@ module.exports = {
         allowNull: true,
       },
       date: {
-        type: Sequelize.DATE,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       time: {
-        type: Sequelize.TIME,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       address: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
       photoUrl: {
         type: Sequelize.STRING

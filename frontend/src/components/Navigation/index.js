@@ -9,11 +9,6 @@ function Navigation({ isLoaded }) {
   const sessionUser = useSelector(state => state.session.user);
 
 
-  // if session user exists,
-  //sessionLinks help render the ProfileButton component that leads to sessionUser
-  //if not
-  //sessionLinks with render the sign-up link with login modal.
-  //(wtf is modal)
 
   let sessionLinks;
 

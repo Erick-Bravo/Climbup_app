@@ -162,9 +162,26 @@ module.exports = {
     const groups = await queryInterface.bulkInsert(
       'Groups',
       [
-        { name: 'Kind-Crushers Bouldering Gym', ownerId: user1 },
-        { name: 'National-Routes Park Volunteer Program', ownerId: user2 },
-        { name: 'Blue-Saphire Climbing Gear', ownerId: user3 }
+        {
+          name: 'Kind-Crushers Bouldering Gym',
+          description: "Kind-Crushers Bouldering Gym has been the go-to gym for both begginer and expert boulderers since 1998. Gym features 20 foot walls, a yoga studio and showers. We post events regularly!!",
+          photoUrl: "http://archives.news.yale.edu/v32.n19/story101.jpg",
+          ownerId: user1
+        },
+        { name: 'National-Routes Park Volunteer Program',
+          description: "When we're not making the best websites, we're organizing!!",
+          ownerId: user2
+        },
+        {
+          name: 'Blue-Saphire Climbing Gear',
+          description: "Worlds best climbing gear",
+          ownerId: user3
+        },
+        {
+          name: 'OutDoor Climbing Association Utah',
+          description: "Follow the rules damnit!! Join our group for updates on our rules.",
+          ownerId: user10
+        }
       ],
       { returning: true }
     );
@@ -172,6 +189,7 @@ module.exports = {
     const group1 = groups[0].id;
     const group2 = groups[1].id;
     const group3 = groups[2].id;
+    const group4 = groups[3].id;
 
     // EVENTS
     const events = await queryInterface.bulkInsert(
@@ -179,38 +197,45 @@ module.exports = {
       [
         {
           name: 'Beer and Climbing Tournament',
-          address: '111 Peters Ln',
-          date: '2021-01-20T08:00:00.000Z',
-          time: '12:00',
+          address: 'Upland, California',
+          date: 'Jan-20-2021',
+          time: '2:00pm',
           groupId: group1
         },
         {
           name: 'Litter Clean-up at the Park',
-          address: '111 Peters Ln',
-          date: '2021-01-25T08:00:00.000Z',
-          time: '10:00',
+          address: 'Zion National Park, Utah',
+          date: 'Jan-25-2021',
+          time: '10:00am',
           groupId: group2
         },
         {
           name: 'Climbing Gear Showcase - Online',
-          address: '111 Peters Ln',
-          date: '2021-01-10T08:00:00.000Z',
-          time: '12:00',
+          address: 'Zoom Link on Event Page',
+          date: 'Jan-10-2021',
+          time: '12:00pm',
           groupId: group3
         },
         {
           name: 'Kidos Climb Free Day!!!',
-          address: '111 Peters Ln',
-          date: '2021-01-13T08:00:00.000Z',
-          time: '10:00',
+          address: 'Riverside, California',
+          date: 'Jan-13-2021',
+          time: '10:00am',
           groupId: group1
         },
         {
           name: 'Hike for Cancer Awareness',
-          address: '111 Peters Ln',
-          date: '2021-01-19T08:00:00.000Z',
-          time: '08:00',
+          address: 'Yosemite National Park, California',
+          date: 'Jan-19,2021',
+          time: '08:00am',
           groupId: group2
+        },
+        {
+          name: 'New Bolting Restrictions Guide',
+          address: 'Moab, Utah',
+          date: 'Feb-28-2021',
+          time: '10:30am',
+          groupId: group4
         }
       ],
       { returning: true }
