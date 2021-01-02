@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink, Route, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { adamOndra } from '../../../loadingGiffs';
 import { fetchAllGroups } from "../../../store/groups";
 import GroupComponent from "./GroupComponent"
