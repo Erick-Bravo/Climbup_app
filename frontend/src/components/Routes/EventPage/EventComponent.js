@@ -1,7 +1,5 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { fetchAllEvents } from "../../../store/events";
+
 
 
 //This file needed to be run here for the operation in index.js
