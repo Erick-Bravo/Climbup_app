@@ -6,13 +6,13 @@ import { fetchAllUsers } from "../../../store/users";
 import { adamOndra } from '../../../loadingGiffs';
 
 
-const MembersComponent = ({users, randMemTables}) => {
+const MembersComponent = () => {
 
-    console.log(users, randMemTables)
+
 
     return (
         <>
-        <h3>Display of random 4 members</h3>
+            <h3>Display of random 4 members</h3>
         </>
     )
 }

@@ -8,3 +8,15 @@ import { adamOndra } from '../../../loadingGiffs';
 
 
 
+const MembersPage = () => {
+
+
+
+    return (
+        <>
+            <h3>This is the Members Page</h3>
+        </>
+    )
+}
+
+export default MembersPage

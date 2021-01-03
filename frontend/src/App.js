@@ -13,6 +13,7 @@ import GroupPage from "./components/Routes/GroupPage"
 import EventPage from "./components/Routes/EventPage"
 
 import { errorGiff } from "./loadingGiffs"
+import MembersPage from "./components/Routes/Members/MembersPage";
 
 
 
@@ -42,8 +43,11 @@ function App() {
           <Route exact path="/groups">
             <Groups />
           </Route>
-          <Route path="/groups/:groupId">
+          <Route exact path="/groups/:groupId">
             <GroupPage />
+          </Route>
+          <Route path="/groups/:groupId/members">
+            <MembersPage />
           </Route>
           <Route exact path="/events">
             <Events />
