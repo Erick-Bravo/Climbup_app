@@ -31,13 +31,14 @@ const Group = ({ theGroup }) => {
     const GroupOwner = currentUsers.find(({ id }) => id === ownerIdNumber)
 
     return (
-        <div id="group-container">
-            <NavLink to={`/groups/${groupId}`}>
+        <NavLink to={`/groups/${groupId}`}>
+            <div id="group-container">
+                <img alt="null" src={theGroup.photoUrl} />
                 <h3>{theGroup.name}</h3>
                 {!GroupOwner && <img alt="Loading..." src={adamOndra} />}
                 {GroupOwner && <h5>{`Group owned by ${GroupOwner.firstName} ${GroupOwner.lastName}`}</h5>}
-            </NavLink>
-        </div>
+            </div>
+        </NavLink>
     )
 }
 

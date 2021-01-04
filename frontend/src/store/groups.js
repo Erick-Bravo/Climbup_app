@@ -1,5 +1,6 @@
 import { fetch } from './csrf.js';
 
+
 const SET_ALL_GROUPS = 'groups/setGroups';
 const SET_GROUP_MEMBERS = 'groups/setAllGroupMembers';
 
@@ -34,8 +35,6 @@ export const fetchGroupMembers = (groupId) => {
     )
   }
 }
-
-
 
 
 // const initialState = { user: null };

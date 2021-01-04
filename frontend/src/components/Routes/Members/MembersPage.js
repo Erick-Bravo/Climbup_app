@@ -8,17 +8,16 @@ import { adamOndra } from '../../../loadingGiffs';
 import "./index.css"
 
 
-const Member = ({member}) => {
+const Member = ({ member }) => {
     return (
         <>
-        <div id="member">
-            <img alt="null" src={member.photoUrl}/>
-            <h3>{member.username}</h3>
-        </div>
-    </>
+            <div id="member">
+                <img alt="null" src={member.photoUrl} />
+                <h3>{member.username}</h3>
+            </div>
+        </>
     )
 }
-
 
 const MembersPage = () => {
 
@@ -36,12 +35,12 @@ const MembersPage = () => {
     return (
         <>
             <div id="members-page-container">
-                    {!members && <img alt="Loading..." src={adamOndra} /> }
-                    {members && members.map(member => {
-                        return (
-                            <Member member={member} key={member.id}/>
-                        )
-                    })}
+                {!members && <img alt="Loading..." src={adamOndra} />}
+                {members && members.map(member => {
+                    return (
+                        <Member member={member} key={member.id} />
+                    )
+                })}
             </div>
         </>
     )

@@ -23,20 +23,21 @@ const Event = ({ theEvent }) => {
         );
     }, [dispatch]);
 
-    const EventOwner = currentGroups.find(({ id }) => id === eventGroupId )
+    const EventOwner = currentGroups.find(({ id }) => id === eventGroupId)
 
     return (
 
-        <div id="event-container">
-            <NavLink to={`/events/${eventId}`}>
+        <NavLink to={`/events/${eventId}`}>
+            <div id="event-container">
+                <img alt="null" src={event.photoUrl}/>
                 <h2>{event.name}</h2>
-                {!EventOwner && <img alt="Loading..." src={adamOndra}/>}
+                {!EventOwner && <img alt="Loading..." src={adamOndra} />}
                 {EventOwner && <h5>{`Hosted By: ${EventOwner.name}`}</h5>}
                 <h5>{event.address}</h5>
                 <h5>{event.date}</h5>
                 <h5>{event.time}</h5>
-            </NavLink>
-        </div>
+            </div>
+        </NavLink>
     )
 }
 

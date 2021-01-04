@@ -1,25 +1,17 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import { fetchAllGroups } from "../../../store/groups";
+import JoinGroup from "./JoinGroupButton"
 import Members from "../Members"
+import "./index.css"
 
+const GroupComponent = ({group, memberTables}) => {
 
-const GroupComponent = () => {
-
-    const dispatch = useDispatch()
-    const { groupId } = useParams();
-
-    useEffect(() => {
-        dispatch(fetchAllGroups())
-    }, [dispatch])
-
-    const group = useSelector(fullReduxState => fullReduxState.groups[groupId - 1])
 
     return (
         <div id="group-page-container">
-            <div id="group-page-photo">
+            <div id="group-page-photo-box">
                 <img alt="photo" src={group.photoUrl} />
+            </div>
+            <div>
+                <JoinGroup memberTables={memberTables}/>
             </div>
             <div>
                 <h1>{group.name}</h1>

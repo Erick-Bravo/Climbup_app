@@ -1,3 +1,7 @@
+#groups {
+    background-color: rgb(255, 255, 255);
+}
+
 #groups img {
     size: 10px;
 }
@@ -14,5 +18,9 @@ a:visited {
 }
 
 #group-container {
-    background-color: rgb(181, 255, 233);
+    background-color: rgb(250, 250, 250);
+}
+
+#group-container img {
+    height: 100px;
 }

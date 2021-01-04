@@ -1,6 +1,9 @@
 #event-container {
     background-color: rgb(181, 255, 233);
 }
+#event-container img{
+    height: 200px;
+}
 
 #event-container a{
     text-decoration: none;

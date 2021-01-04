@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import "./index.css"
 
 
 
@@ -14,7 +15,7 @@ const EventComponent = ({events}) => {
     return (
         <div id="event-page-container">
             <div id="event-page-photo">
-                <img alt="photo" src={event.photoUrl} />
+                <img alt="null" src={event.photoUrl} />
             </div>
             <div>
                 <h1>{event.name}</h1>
