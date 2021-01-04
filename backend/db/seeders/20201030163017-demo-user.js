@@ -20,7 +20,7 @@ module.exports = {
         lastName: "YahDood",
         username: "FakeUser1",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -28,7 +28,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser2",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -36,7 +36,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser3",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -44,7 +44,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser4",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -52,7 +52,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser5",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -60,7 +60,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser6",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -68,7 +68,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser7",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -76,7 +76,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser8",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -84,7 +84,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser9",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -92,7 +92,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser10",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -100,7 +100,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser11",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -108,7 +108,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser12",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -116,7 +116,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser13",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -124,7 +124,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser14",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
       {
@@ -132,7 +132,7 @@ module.exports = {
         lastName: faker.name.lastName(),
         username: "FakeUser15",
         email: faker.internet.email(),
-        photoUrl: faker.internet.avatar(),
+        photoUrl: "https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401756/54579019-a-man-standing-with-broken-arm-in-bandages-sketch-icon-for-web-mobile-and-infographics-hand-drawn-ve.jpg",
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
 

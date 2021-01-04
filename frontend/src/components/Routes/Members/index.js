@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
-import { fetchAllMembers } from "../../../store/members";
+// import { fetchAllMembers } from "../../../store/members";
 import { fetchAllGroups } from "../../../store/groups";
+// import { fetchGroupMembers } from "../../../store/groups";
 import { fetchAllUsers } from "../../../store/users";
 import { adamOndra } from '../../../loadingGiffs';
 // import MembersComponent from './MembersComponent';
@@ -14,9 +15,9 @@ const Members = () => {
     const { groupId } = useParams();
 
 
-    useEffect(() => {
-        dispatch(fetchAllMembers())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchAllMembers())
+    // }, [dispatch])
 
     useEffect(() => {
         dispatch(fetchAllGroups())
@@ -27,14 +28,18 @@ const Members = () => {
     }, [dispatch])
 
 
-    const users = useSelector(fullReduxState => fullReduxState.users)
 
-    const Groups = useSelector(fullReduxState => fullReduxState.groups)
 
-    const membersTables = useSelector(fullReduxState => fullReduxState.members)
-    // console.log(membersTables)
+    // const users = useSelector(fullReduxState => fullReduxState.users)
 
-    const GroupMembers = membersTables.filter(memberTable => memberTable.groupId === parseInt(groupId, 10))
+    // const Groups = useSelector(fullReduxState => fullReduxState.groups)
+
+
+
+    // const membersTables = useSelector(fullReduxState => fullReduxState.members)
+    // // console.log(membersTables)
+
+    // const GroupMembers = membersTables.filter(memberTable => memberTable.groupId === parseInt(groupId, 10))
     // console.log(GroupMembers)
 
     //Randomized 4 Members
@@ -56,7 +61,7 @@ const Members = () => {
             {/* {!GroupMembers && <img alt="Loading..." src={adamOndra} />} */}
             {/* {GroupMembers && <MembersComponent />} */}
 
-            <p>{`Currently ${GroupMembers.length} Members`}</p>
+            {/* <p>{`Currently ${GroupMembers.length} Members`}</p> */}
             <NavLink to={`/groups/${groupId}/members`}>See All Members</NavLink>
         </div>
     )
