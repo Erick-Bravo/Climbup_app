@@ -6,7 +6,7 @@ const { Member } = require("../../db/models")
 router.get("/", async(req, res, next) => {
     try {
         const members = await Member.findAll();
-        res.json({members: members})
+        res.json({memberTables: members})
     } catch (e) {
         next(e)
     }

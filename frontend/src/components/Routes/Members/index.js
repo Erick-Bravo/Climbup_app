@@ -1,12 +1,11 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
-// import { fetchAllMembers } from "../../../store/members";
-import { fetchAllGroups } from "../../../store/groups";
+import { fetchAllMemberTables } from "../../../store/memberTables";
+import { fetchAllGroups, fetchGroupMembers } from "../../../store/groups";
 // import { fetchGroupMembers } from "../../../store/groups";
-import { fetchAllUsers } from "../../../store/users";
-import { adamOndra } from '../../../loadingGiffs';
-// import MembersComponent from './MembersComponent';
+// import { adamOndra } from '../../../loadingGiffs';
+
 
 
 
@@ -14,33 +13,25 @@ const Members = () => {
     const dispatch = useDispatch();
     const { groupId } = useParams();
 
-
-    // useEffect(() => {
-    //     dispatch(fetchAllMembers())
-    // }, [dispatch])
-
     useEffect(() => {
         dispatch(fetchAllGroups())
     }, [dispatch])
 
+    const Groups = useSelector(fullReduxState => fullReduxState.groups)
+
     useEffect(() => {
-        dispatch(fetchAllUsers())
+        dispatch(fetchAllMemberTables())
     }, [dispatch])
 
+    const memberTables = useSelector(fullReduxState => fullReduxState.memberTables)
+
+    // useEffect(() => {
+    //     dispatch(fetchGroupMembers(groupId))
+    // }, [dispatch])
 
 
-
-    // const users = useSelector(fullReduxState => fullReduxState.users)
-
-    // const Groups = useSelector(fullReduxState => fullReduxState.groups)
-
-
-
-    // const membersTables = useSelector(fullReduxState => fullReduxState.members)
-    // // console.log(membersTables)
-
-    // const GroupMembers = membersTables.filter(memberTable => memberTable.groupId === parseInt(groupId, 10))
-    // console.log(GroupMembers)
+    const GroupMembers = memberTables.filter(memberTable => memberTable.groupId === parseInt(groupId, 10))
+    console.log(GroupMembers)
 
     //Randomized 4 Members
     //Sometimes its only 3, which is weird.
@@ -61,8 +52,9 @@ const Members = () => {
             {/* {!GroupMembers && <img alt="Loading..." src={adamOndra} />} */}
             {/* {GroupMembers && <MembersComponent />} */}
 
-            {/* <p>{`Currently ${GroupMembers.length} Members`}</p> */}
+            <p>{`Currently ${GroupMembers.length} Members`}</p>
             <NavLink to={`/groups/${groupId}/members`}>See All Members</NavLink>
+            <button>JOIN GROUP</button>
         </div>
     )
 }
