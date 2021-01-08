@@ -6,3 +6,9 @@
     width: 100px;
     border-radius: 50%
 }
+
+
+#random-members-box {
+    display: flex;
+    background-color: orange;
+}

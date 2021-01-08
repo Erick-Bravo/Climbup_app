@@ -14,30 +14,17 @@ const GroupPage = () => {
     const { groupId } = useParams();
     const groupIdParsed = parseInt(groupId)
 
-    // useEffect(() => {
-    //     dispatch(fetchAllGroups())
-    // }, [dispatch])
-
-    // const group = useSelector(fullReduxState => fullReduxState.groups[groupId - 1])
-
+    
     useEffect(() => {
         dispatch(fetchGroupMembers(groupIdParsed))
     }, [dispatch])
 
     const group = useSelector(state => state.groups)
 
-    useEffect(() => {
-        dispatch(fetchAllMemberTables())
-    }, [dispatch])
-
-
-    const memberTables = useSelector(fullReduxState => fullReduxState.memberTables)
-
-
     return (
         <>
             {!group && <img alt="Loading..." src={adamOndra} />}
-            {group && <GroupComponent group={group} memberTables={memberTables}/>}
+            {group && <GroupComponent group={group} />}
         </>
     )
 }

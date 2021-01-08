@@ -2,7 +2,7 @@ import JoinGroup from "./JoinGroupButton"
 import Members from "../Members"
 import "./index.css"
 
-const GroupComponent = ({group, memberTables}) => {
+const GroupComponent = ({group}) => {
 
 
     return (
@@ -11,14 +11,14 @@ const GroupComponent = ({group, memberTables}) => {
                 <img alt="null" src={group.photoUrl} />
             </div>
             <div>
-                <JoinGroup memberTables={memberTables}/>
+                <JoinGroup group={group}/>
             </div>
             <div>
                 <h1>{group.name}</h1>
                 <h3>{`Description: ${group.description}`}</h3>
             </div>
             <div>
-                <Members />
+                <Members group={group}/>
             </div>
         </div>
     )
