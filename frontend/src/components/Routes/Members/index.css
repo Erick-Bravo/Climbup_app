@@ -10,5 +10,14 @@
 
 #random-members-box {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     background-color: orange;
+    height: 175px;
+}
+
+#member {
+    margin: 7px;
+
 }
