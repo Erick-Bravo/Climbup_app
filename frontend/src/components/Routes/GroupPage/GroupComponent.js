@@ -8,7 +8,7 @@ const GroupComponent = ({group, memberTables}) => {
     return (
         <div id="group-page-container">
             <div id="group-page-photo-box">
-                <img alt="photo" src={group.photoUrl} />
+                <img alt="null" src={group.photoUrl} />
             </div>
             <div>
                 <JoinGroup memberTables={memberTables}/>

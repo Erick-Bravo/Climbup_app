@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { adamOndra } from '../../../loadingGiffs';
-import { fetchAllGroups, fetchGroupMembers } from "../../../store/groups";
+import { fetchGroupMembers } from "../../../store/groups";
 import { fetchAllMemberTables } from "../../../store/memberTables";
 import GroupComponent from "./GroupComponent"
 
@@ -14,15 +14,17 @@ const GroupPage = () => {
     const { groupId } = useParams();
     const groupIdParsed = parseInt(groupId)
 
+    // useEffect(() => {
+    //     dispatch(fetchAllGroups())
+    // }, [dispatch])
+
+    // const group = useSelector(fullReduxState => fullReduxState.groups[groupId - 1])
+
     useEffect(() => {
-        dispatch(fetchAllGroups())
+        dispatch(fetchGroupMembers(groupIdParsed))
     }, [dispatch])
 
-    const group = useSelector(fullReduxState => fullReduxState.groups[groupId - 1])
-
-    // useEffect(() => {
-    //     dispatch(fetchGroupMembers(groupIdParsed))
-    // }, [dispatch])
+    const group = useSelector(state => state.groups)
 
     useEffect(() => {
         dispatch(fetchAllMemberTables())

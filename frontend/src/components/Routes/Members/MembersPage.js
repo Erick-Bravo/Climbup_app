@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams, NavLink } from 'react-router-dom';
-// import { fetchAllMembers } from "../../../store/members";
-import { fetchAllGroups, fetchGroupMembers } from "../../../store/groups";
-import { fetchAllUsers } from "../../../store/users";
+import { useParams} from 'react-router-dom';
+import { fetchGroupMembers } from "../../../store/groups";
 import { adamOndra } from '../../../loadingGiffs';
 import "./index.css"
 
@@ -38,7 +36,8 @@ const MembersPage = () => {
                 {!members && <img alt="Loading..." src={adamOndra} />}
                 {members && members.map(member => {
                     return (
-                        <Member member={member} key={member.id} />
+                        null
+                        // <Member member={member} key={member.id} />
                     )
                 })}
             </div>
