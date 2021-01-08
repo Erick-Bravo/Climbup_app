@@ -60,9 +60,10 @@ const Groups = () => {
     return (
         <div id="groups">
             <h2>List of Groups</h2>
-            {currentGroups ? currentGroups.map(group => {
+            {!currentGroups && <img alt="Loading..." src={adamOndra} />}
+            {currentGroups && currentGroups.map(group => {
                 return <Group theGroup={group} key={group.id} />
-            }) : <img alt="Loading..." src={adamOndra} />}
+            })}
         </div>
     );
 };
