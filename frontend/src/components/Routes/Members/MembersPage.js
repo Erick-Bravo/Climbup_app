@@ -36,8 +36,7 @@ const MembersPage = () => {
                 {!members && <img alt="Loading..." src={adamOndra} />}
                 {members && members.map(member => {
                     return (
-                        null
-                        // <Member member={member} key={member.id} />
+                        <Member member={member} key={member.id} />
                     )
                 })}
             </div>
