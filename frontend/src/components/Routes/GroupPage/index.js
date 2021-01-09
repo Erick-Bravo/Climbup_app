@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { adamOndra } from '../../../loadingGiffs';
 import { fetchGroupMembers } from "../../../store/groups";
-import { fetchAllMemberTables } from "../../../store/memberTables";
 import GroupComponent from "./GroupComponent"
 
 
@@ -14,12 +13,13 @@ const GroupPage = () => {
     const { groupId } = useParams();
     const groupIdParsed = parseInt(groupId)
 
-    
+
     useEffect(() => {
         dispatch(fetchGroupMembers(groupIdParsed))
     }, [dispatch])
 
     const group = useSelector(state => state.groups)
+    // const what = useSelector(state => state)
 
     return (
         <>

@@ -2,6 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import session from './session'
 import groupsReducer from "./groups"
+import groupEventsReducer from "./groupEvents"
 import eventsReducer from "./events"
 import usersReducer from "./users"
 import memberTablesReducer from "./memberTables"
@@ -9,6 +10,7 @@ import memberTablesReducer from "./memberTables"
 const rootReducer = combineReducers({
   session: session,
   groups: groupsReducer,
+  groupEvents: groupEventsReducer,
   events: eventsReducer,
   users: usersReducer,
   memberTables: memberTablesReducer

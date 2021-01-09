@@ -9,6 +9,11 @@ import { fetch } from './csrf.js';
 const SET_ALL_GROUPS = 'groups/setGroups';
 const SET_GROUP_MEMBERS = 'groups/setGroupMembers';
 const ADD_MEMBER = "AddMember"
+// const SET_GROUP_EVENTS = 'groupEvents';
+
+
+
+
 
 //Actions creator that produces and object
 const setGroups = (groups) => ({
@@ -16,7 +21,7 @@ const setGroups = (groups) => ({
   groups: groups,
 });
 
-
+//Group
 //Another Action creator that produces a thunk function
 export const fetchAllGroups = () => {
   return async (dispatch) => {
@@ -28,6 +33,11 @@ export const fetchAllGroups = () => {
   };
 };
 
+
+
+
+
+//GroupMembers
 const setGroupMembers = (members) => ({
   type: SET_GROUP_MEMBERS,
   members: members,
@@ -67,6 +77,28 @@ export const addGroupMember = (groupId, userId) => {
 }
 
 
+
+
+
+
+//GroupEvents
+
+// const setGroupEvents = (groupEvents) => ({
+//   type: SET_GROUP_EVENTS,
+//   groupEvents
+// })
+
+// export const fetchGroupEvents = (groupId) => {
+//   return async(dispatch) => {
+//     const response = await fetch(`/api/groups/${groupId}/events`)
+//     dispatch(
+//       setGroupEvents(response.data.groupEvents)
+//     )
+//   }
+// }
+
+
+
 // const initialState = { user: null };
 const initialState = [];
 
@@ -79,8 +111,13 @@ function reducer(state = initialState, action) {
       newState = action.groups;
       return newState;
     case SET_GROUP_MEMBERS:
+      newState = Object.assign({}, state)
       newState = action.members;
       return newState;
+    // case SET_GROUP_EVENTS:
+    //   newState = Object.assign({}, state)
+    //   newState = action.members;
+    //   return newState;
     case ADD_MEMBER:
       newState = Object.assign({}, state)
       newState.Users.push(action.payload)
